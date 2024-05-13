@@ -41,6 +41,18 @@ createApp({
             } else {
                 return ''
             }
+        },
+        next() {
+            this.immagineAttiva++
+            if (this.immagineAttiva == 5) {
+                this.immagineAttiva = 0
+            }
+        },
+        back() {
+            this.immagineAttiva--
+            if (this.immagineAttiva == -1) {
+                this.immagineAttiva = 4
+            }
         }
     }
 }).mount('#app')
