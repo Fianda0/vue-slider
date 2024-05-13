@@ -53,6 +53,9 @@ createApp({
             if (this.immagineAttiva == -1) {
                 this.immagineAttiva = 4
             }
+        },
+        thumbActive(i) {
+            this.immagineAttiva = i
         }
     }
 }).mount('#app')
